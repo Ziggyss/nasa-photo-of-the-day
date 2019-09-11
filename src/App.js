@@ -5,7 +5,8 @@ import axios from 'axios';
 import NasaImage from './NasaImage';
 import Description from './Description';
 import Date from './Date';
-import Title from './Title'
+import Title from './Title';
+import Copyright from './Copyright';
 
 
 const nasaApi = 'https://lambda-github-api-server.herokuapp.com/';
@@ -15,15 +16,16 @@ const [image, setImage] = useState('');
 const [description, setDescription] = useState('');
 const [date, setDate] = useState('');
 const [title, setTitle] = useState('');
+const [copyright, setCopyright] = useState('');
 
   useEffect( () => {
     axios.get(nasaApi)
     .then((response => {
-      debugger
       setImage(response.data.hdurl);
       setDescription(response.data.explanation);
       setDate(response.data.date);
       setTitle(response.data.title);
+      setCopyright(response.data.copyright);
       console.log(response.data);
     }))
     .catch((response => {
@@ -41,6 +43,7 @@ const [title, setTitle] = useState('');
         <div className="image">
           <NasaImage image={image}
           />
+          <Copyright copyright={copyright} />
         </div>
         <p className="description">
           <Description description={description}/>
