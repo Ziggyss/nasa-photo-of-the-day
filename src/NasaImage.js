@@ -1,14 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function NasaImage(props) {
-
-    return(   
-      <div className="nasaImage">
+  return (
+    <div className="nasaImage">
       <img src={props.image} alt="NASA POD"></img>
-      </div>    
-    )
-};
-
-  
+    </div>
+  );
+}
 
 export default NasaImage;
