@@ -1,13 +1,13 @@
 import React from 'react';
 
-funtion NasaImage(props) {
+function NasaImage(props) {
 
     return(   
       <div className="nasaImage">
-      <img src={props.hdurl}></img>
+      <img src={props.image} alt="NASA POD"></img>
       </div>    
     )
-}
+};
 
   
 
