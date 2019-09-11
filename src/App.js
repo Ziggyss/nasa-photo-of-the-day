@@ -35,17 +35,22 @@ function App() {
 
   return (
     <div className="App">
-      <div className="photoContainer">
-        <h2>NASA Photo of the Day</h2>
+      <h2>NASA Photo of the Day</h2>
+      <Date date={date} />
+      <div className="mainContainer">
+        <div className="photoContainer">
         <Title title={title} />
-        <Date date={date} />
-        <div className="image">
-          <NasaImage image={image} />
-          <Copyright copyright={copyright} />
+          <div className="image">
+            <NasaImage image={image} />
+            <Copyright copyright={copyright} />
+          </div>
         </div>
-        <p className="description">
-          <Description description={description} />
-        </p>
+        <div className="infoBox">
+         
+          <p className="description">
+            <Description description={description} />
+          </p>
+        </div>
       </div>
     </div>
   );

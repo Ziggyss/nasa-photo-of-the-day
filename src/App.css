@@ -1,3 +1,9 @@
+
+html {
+  background-color: #282c34;
+}
+
+
 .App {
   text-align: center;
 }
@@ -34,4 +40,44 @@
 
 .nasaImage img {
   max-width: 800px;
+}
+
+.photoContainer {
+  color: white;
+}
+
+.photoContainer .copyright {
+  color: grey;
+}
+
+.imageTitle {
+  padding-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.infoBox {
+  color: white;
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 4rem;
+  color: white;
+}
+
+.date {
+  color: white;
+  font-size: 2rem;
+  padding-bottom: 40px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+} 
+
+.infoBox {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 30px;
 }
