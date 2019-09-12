@@ -1,7 +1,14 @@
 import React from "react";
+import styled from 'styled-components';
 
 function Title(props) {
-  return <div className="imageTitle">{props.title}</div>;
+  return <TitleHeading>{props.title}</TitleHeading>;
 }
+
+const TitleHeading = styled.div`
+    font-size: 2rem;
+    padding: 5.5%;
+    text-align: center;
+`;
 
 export default Title;
