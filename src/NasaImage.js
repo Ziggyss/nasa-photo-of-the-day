@@ -15,5 +15,8 @@ const ImageDiv = styled.div`
   img {
     max-width: 700px;
     border: solid 2px white;
+    @media(max-width: 500px){
+      max-width: 100%;
+    }
   }
 `;

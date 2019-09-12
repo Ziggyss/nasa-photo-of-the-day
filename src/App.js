@@ -57,6 +57,9 @@ const PODH2 = styled.h2`
   font-size: 4rem;
   color: dark-gray;
   text-align: center;
+  @media(max-width: 500px){
+    font-size: 3rem;
+  }
 `;
 
 const MainContainer = styled.div`
@@ -67,6 +70,9 @@ const MainContainer = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
+  @media(max-width: 500px){
+    flex-direction: column;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -77,6 +83,10 @@ const ImageContainer = styled.div`
   color: grey;
   padding-top: 5%;
   padding-bottom: 5%;
+  @media(max-width: 500px){
+    margin: 0 auto;
+    padding-left: initial;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -85,6 +95,9 @@ const TextContainer = styled.div`
    color: white;
    padding: 2%;
    align-items: center;
+   @media(max-width: 500px){
+     text-align: center;
+   }
 `;
 
 export default App;
